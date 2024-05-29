@@ -1,0 +1,92 @@
+html,
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* 地图容器 */
+#container {
+  width: 100vw;
+  height: 75vh;
+  position: fixed;
+}
+
+
+/* 司机弹窗信息 */
+.dialogBox {
+  width: 70px;
+  background: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  font-size: 12px;
+  padding: 2px 0;
+  transform: translate(-42%, -170%);
+}
+.dialogBox:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: blue transparent transparent transparent;
+}
+.dialogBox .title {
+  color: rgb(89, 8, 228);
+  margin: 2px;
+}
+.dialogBox .itemBox {
+  margin-top: 10px;
+}
+
+/* 隐藏高德地图左下角、右小角标记 */
+.amap-logo {
+  display: none;
+  opacity: 0 !important;
+}
+
+.amap-copyright {
+  opacity: 0;
+}
+
+/* 底部信息盒子 */
+.infoBox {
+  width: 100vw;
+  background-color: #fff;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  /* transform: translateY(-25%); */
+  position: absolute;
+  top: 70%;
+}
+.logistics-info {
+  padding: 20px;
+  border: 1px solid #90caf9;
+  background-color: #fff;
+}
+
+.logistics-info h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #90caf9;
+}
+
+.logistics-details {
+  margin-top: 10px;
+}
+
+.logistics-details p {
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.logistics-details span {
+  font-weight: bold;
+  width: 100px;
+  color: #212121;
+}
